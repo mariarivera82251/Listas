@@ -7,8 +7,13 @@ public class Listas {
 public static void main (String[] args) {
     Scanner sc = new Scanner(System.in);
     
-    int opc;
-    do{
+    int opcionprincipal,opcionMenus;
+     int dato;
+     
+     ListasSimplementeLigadas lista1 = new ListaSimplementeLigada();
+     
+    do
+    {
     System.out.println("Menú Listas");
     System.out.println("1. Listas simplemente ligadas");
     System.out.println("2. Listas simplemente ligadas Circular");
@@ -19,11 +24,17 @@ public static void main (String[] args) {
     
 
     
-    opc = sc.nextInt();
+    opcionprincipal = sc.nextInt();
     
-    switch (opc)
+    switch (opciónprincipal)
+        
     {
+    
         case 1:
+            do
+            {
+                system.out.println("Listas Simplemente ligadas");
+            }
             System.out.println("opcion 1");
             ListasSimplementeLigadas Lista1 = new ListasSimplementeLigadas();
             Lista1.InsertarInicio(5);
